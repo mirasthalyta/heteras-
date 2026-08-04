@@ -193,13 +193,19 @@ body{
 <img src="batata.jpg" width="300" alt="batata">
 <h1> Alunas: Thalyta e Maryah</h1>
 <h2> Ajude o nosso blog e deixe a sua curtida.</h2>
-<button>❤️<span>0</span></button>
+<button>❤️t<span>0</span></button>
 <p> muito obrigada pela sua atencao! (:</p>
 </main>
 
 </body>
-<script>function botaoClicado() {
+<script>
+const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+function botaoClicado() {
 let texto = botao.querySelector("span");
 texto.textContent++;
-} </script>
+
+} 
+
+</script>
 </html>
